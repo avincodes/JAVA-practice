@@ -22,6 +22,29 @@ public class Main {
         In.close();
     }
 
+	//General Method
+	public static void nAvg(){
+        Scanner In = new Scanner(System.in);
+        int tot,count=0;
+		System.out.print("Enter Number:");
+        int n = In.nextInt();
+            
+        
+        while(n<0) {
+
+            
+            System.out.print("Enter Number:");
+            n = In.nextInt();
+            tot+=n;
+			count++;
+        };
+
+        System.out.println("Average is " + tot/count);
+
+        In.close();
+    }
+
+    
     public static void main(String args[]){
 
         Avg();
